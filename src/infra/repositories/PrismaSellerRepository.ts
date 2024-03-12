@@ -8,7 +8,7 @@ class PrismaSellerRepository implements SellerContract {
         name,
       }
     })
-    return seller || undefined
+    return seller 
   }
 }
 
