@@ -1,6 +1,6 @@
 import { randomUUID } from 'crypto'
 
-type SellerProps = {
+export type SellerProps = {
   name: string,
   image: string,
   password: string,

@@ -1,8 +1,8 @@
-import { AuthenticateSeller } from "../../../app/usecases/seller/AuthenticateSeller";
+import { AuthenticateSellerUseCase } from "../../../app/usecases/seller/AuthenticateSellerUseCase";
 import { HttpResponse } from "../../contracts/HttpResponse";
 
 class AuthenticateSellerController {
-  constructor(private readonly authenticateSellerUseCase: AuthenticateSeller) {}
+  constructor(private readonly authenticateSellerUseCase: AuthenticateSellerUseCase) {}
 
   async handle(name: string, password: string): Promise<HttpResponse> {
     try {

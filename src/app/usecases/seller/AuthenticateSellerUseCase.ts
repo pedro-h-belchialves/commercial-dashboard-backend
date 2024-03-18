@@ -2,7 +2,7 @@ import { BcryptContract } from "../../contracts/BcryptContract";
 import { JwtContract } from "../../contracts/JwtContract";
 import { SellerContract } from "../../contracts/SellerContract";
 
-class AuthenticateSeller {
+class AuthenticateSellerUseCase {
   constructor(
     private readonly SellerContract: SellerContract,
     private readonly JwtContract: JwtContract,
@@ -23,4 +23,4 @@ class AuthenticateSeller {
   }
 }
 
-export { AuthenticateSeller }
+export { AuthenticateSellerUseCase }
